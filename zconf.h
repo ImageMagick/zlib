@@ -270,7 +270,7 @@
 #  endif
 #endif
 
-/* This part added for GraphicsMagick */
+/* This part added for ImageMagick */
 #if defined (_VISUALC_)
 #  if defined(_MT) && defined(_DLL) && !defined(_LIB)
 #    define ZLIB_DLL
@@ -280,7 +280,7 @@
 // Disable deprecation warning for POSIX calls
 #  pragma warning(disable : 4996 )
 #endif
-/* End of GraphicsMagick part. */
+/* End of ImageMagick part. */
 
 #if defined(WINDOWS) || defined(WIN32)
    /* If building or using zlib as a DLL, define ZLIB_DLL.
@@ -437,6 +437,6 @@ typedef uLong FAR uLongf;
   #pragma map(inflate_copyright,"INCOPY")
 #endif
 
-/* End of GraphicsMagick part. */
+/* End of ImageMagick part. */
 
 #endif /* ZCONF_H */
