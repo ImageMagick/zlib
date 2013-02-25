@@ -105,7 +105,7 @@ local  void check_match OF((deflate_state *s, IPos start, IPos match,
 /* Tail of hash chains */
 
 #ifndef TOO_FAR
-#  define TOO_FAR 4096
+#  define TOO_FAR 32767
 #endif
 /* Matches of length 3 are discarded if their distance exceeds TOO_FAR */
 
