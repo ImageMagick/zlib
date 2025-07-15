@@ -1,20 +1,21 @@
-[DLL]
+[DYNAMIC_LIBRARY]
 
 [LICENSE]
 LICENSE
 
-[DEFINES_DLL]
+[DYNAMIC_DEFINES]
 ZLIB_DLL
 
-[DIRECTORIES]
-.
+[INCLUDE_ARTIFACTS]
+zconf.h -> .
+zlib.h -> .
 
 [EXCLUDES]
-maketree.c
-minigzip.c
-example.c
+contrib\
+examples\
+test\
 
-[CONFIG_DEFINE]
+[MAGICK_BASECONFIG_DEFINE]
 /*
   Define to use the zlib ZIP compression library
 */
